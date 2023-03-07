@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace WinFormsFlappyBird
@@ -18,6 +19,11 @@ namespace WinFormsFlappyBird
         }
 
         private void pipeBottom_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void gameTimerEvent(object sender, ElapsedEventArgs e)
         {
             throw new System.NotImplementedException();
         }

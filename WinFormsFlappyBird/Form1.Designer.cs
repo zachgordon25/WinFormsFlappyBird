@@ -34,24 +34,26 @@
             this.pipeTop = new System.Windows.Forms.PictureBox();
             this.ground = new System.Windows.Forms.PictureBox();
             this.scoreText = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Timers.Timer();
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameTimer)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // flappyBird
-            //
+            // 
             this.flappyBird.Image = global::WinFormsFlappyBird.Properties.Resources.bird;
-            this.flappyBird.Location = new System.Drawing.Point(143, 210);
+            this.flappyBird.Location = new System.Drawing.Point(52, 247);
             this.flappyBird.Name = "flappyBird";
-            this.flappyBird.Size = new System.Drawing.Size(101, 89);
+            this.flappyBird.Size = new System.Drawing.Size(74, 67);
             this.flappyBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.flappyBird.TabIndex = 0;
             this.flappyBird.TabStop = false;
-            //
+            // 
             // pipeBottom
-            //
+            // 
             this.pipeBottom.Image = global::WinFormsFlappyBird.Properties.Resources.pipe;
             this.pipeBottom.Location = new System.Drawing.Point(389, 462);
             this.pipeBottom.Name = "pipeBottom";
@@ -60,9 +62,9 @@
             this.pipeBottom.TabIndex = 1;
             this.pipeBottom.TabStop = false;
             this.pipeBottom.Click += new System.EventHandler(this.pipeBottom_Click);
-            //
+            // 
             // pipeTop
-            //
+            // 
             this.pipeTop.Image = global::WinFormsFlappyBird.Properties.Resources.pipedown;
             this.pipeTop.Location = new System.Drawing.Point(512, -20);
             this.pipeTop.Name = "pipeTop";
@@ -70,9 +72,9 @@
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeTop.TabIndex = 2;
             this.pipeTop.TabStop = false;
-            //
+            // 
             // ground
-            //
+            // 
             this.ground.Image = global::WinFormsFlappyBird.Properties.Resources.ground;
             this.ground.Location = new System.Drawing.Point(-16, 693);
             this.ground.Name = "ground";
@@ -80,18 +82,25 @@
             this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ground.TabIndex = 3;
             this.ground.TabStop = false;
-            //
+            // 
             // scoreText
-            //
+            // 
             this.scoreText.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreText.Location = new System.Drawing.Point(12, 12);
             this.scoreText.Name = "scoreText";
             this.scoreText.Size = new System.Drawing.Size(232, 84);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
-            //
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Enabled = true;
+            this.gameTimer.Interval = 20D;
+            this.gameTimer.SynchronizingObject = this;
+            this.gameTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.gameTimerEvent);
+            // 
             // Form1
-            //
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
@@ -107,8 +116,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameTimer)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Timers.Timer gameTimer;
 
         private System.Windows.Forms.Label scoreText;
 
