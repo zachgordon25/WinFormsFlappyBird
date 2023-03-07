@@ -39,50 +39,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // flappyBird
-            // 
-            this.flappyBird.Location = new System.Drawing.Point(130, 247);
+            //
+            this.flappyBird.Image = global::WinFormsFlappyBird.Properties.Resources.bird;
+            this.flappyBird.Location = new System.Drawing.Point(143, 210);
             this.flappyBird.Name = "flappyBird";
-            this.flappyBird.Size = new System.Drawing.Size(116, 54);
+            this.flappyBird.Size = new System.Drawing.Size(101, 89);
+            this.flappyBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.flappyBird.TabIndex = 0;
             this.flappyBird.TabStop = false;
-            // 
+            //
             // pipeBottom
-            // 
-            this.pipeBottom.Location = new System.Drawing.Point(451, 658);
+            //
+            this.pipeBottom.Image = global::WinFormsFlappyBird.Properties.Resources.pipe;
+            this.pipeBottom.Location = new System.Drawing.Point(389, 462);
             this.pipeBottom.Name = "pipeBottom";
-            this.pipeBottom.Size = new System.Drawing.Size(116, 54);
+            this.pipeBottom.Size = new System.Drawing.Size(116, 311);
+            this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeBottom.TabIndex = 1;
             this.pipeBottom.TabStop = false;
-            // 
+            this.pipeBottom.Click += new System.EventHandler(this.pipeBottom_Click);
+            //
             // pipeTop
-            // 
-            this.pipeTop.Location = new System.Drawing.Point(451, 12);
+            //
+            this.pipeTop.Image = global::WinFormsFlappyBird.Properties.Resources.pipedown;
+            this.pipeTop.Location = new System.Drawing.Point(512, -20);
             this.pipeTop.Name = "pipeTop";
-            this.pipeTop.Size = new System.Drawing.Size(116, 54);
+            this.pipeTop.Size = new System.Drawing.Size(116, 275);
+            this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeTop.TabIndex = 2;
             this.pipeTop.TabStop = false;
-            // 
+            //
             // ground
-            // 
-            this.ground.Location = new System.Drawing.Point(21, 718);
+            //
+            this.ground.Image = global::WinFormsFlappyBird.Properties.Resources.ground;
+            this.ground.Location = new System.Drawing.Point(-16, 693);
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(636, 55);
+            this.ground.Size = new System.Drawing.Size(715, 114);
+            this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ground.TabIndex = 3;
             this.ground.TabStop = false;
-            // 
+            //
             // scoreText
-            // 
+            //
             this.scoreText.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreText.Location = new System.Drawing.Point(12, 12);
             this.scoreText.Name = "scoreText";
             this.scoreText.Size = new System.Drawing.Size(232, 84);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
@@ -92,8 +101,8 @@
             this.Controls.Add(this.pipeTop);
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.flappyBird);
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
-            this.Text = "Flappy Bird Game";
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).EndInit();
