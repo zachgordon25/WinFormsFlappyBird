@@ -14,7 +14,7 @@ namespace WinFormsFlappyBird
     public partial class Form1 : Form
     {
         int pipeSpeed = 8;
-        int gravity = 15;
+        int gravity = 5;
         private int score = 0;
 
         public Form1()
@@ -43,7 +43,7 @@ namespace WinFormsFlappyBird
         {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = -15;
+                gravity = -5;
             }
         }
 
@@ -51,7 +51,7 @@ namespace WinFormsFlappyBird
         {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = 15;
+                gravity = 5;
             }
         }
     }
