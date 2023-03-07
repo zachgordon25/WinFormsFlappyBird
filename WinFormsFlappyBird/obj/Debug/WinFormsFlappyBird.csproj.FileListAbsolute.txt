@@ -1,0 +1,10 @@
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\bin\Debug\WinFormsFlappyBird.exe.config
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\bin\Debug\WinFormsFlappyBird.exe
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\bin\Debug\WinFormsFlappyBird.pdb
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.csproj.AssemblyReference.cache
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.csproj.SuggestedBindingRedirects.cache
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.Properties.Resources.resources
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.csproj.GenerateResource.cache
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.csproj.CoreCompileInputs.cache
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.exe
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.pdb
