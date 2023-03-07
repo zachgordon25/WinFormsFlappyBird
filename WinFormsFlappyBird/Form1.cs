@@ -22,22 +22,25 @@ namespace WinFormsFlappyBird
             InitializeComponent();
         }
 
-        // private void pipeBottom_Click(object sender, EventArgs e)
-        // {
-        //     throw new System.NotImplementedException();
-        // }
-
-        private void gameTimerEvent(object sender, ElapsedEventArgs e)
+        private void gameTimerEvent(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            flappyBird.Top += gravity;
         }
 
         private void gamekeyisdown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Space)
+            {
+                gravity = -5;
+            }
         }
 
         private void gamekeyisup(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Space)
+            {
+                gravity = 5;
+            }
         }
     }
 }

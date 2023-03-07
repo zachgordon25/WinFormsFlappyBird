@@ -8,3 +8,4 @@ C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlapp
 C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.csproj.CoreCompileInputs.cache
 C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.exe
 C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.pdb
+C:\Users\zachg\dev\WinFormsFlappyBird\WinFormsFlappyBird\obj\Debug\WinFormsFlappyBird.Form1.resources
