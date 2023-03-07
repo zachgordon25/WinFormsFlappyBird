@@ -33,6 +33,7 @@
             this.pipeBottom = new System.Windows.Forms.PictureBox();
             this.pipeTop = new System.Windows.Forms.PictureBox();
             this.ground = new System.Windows.Forms.PictureBox();
+            this.scoreText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.flappyBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
@@ -71,12 +72,22 @@
             this.ground.TabIndex = 3;
             this.ground.TabStop = false;
             // 
+            // scoreText
+            // 
+            this.scoreText.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreText.Location = new System.Drawing.Point(12, 12);
+            this.scoreText.Name = "scoreText";
+            this.scoreText.Size = new System.Drawing.Size(232, 84);
+            this.scoreText.TabIndex = 4;
+            this.scoreText.Text = "Score: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(669, 785);
+            this.Controls.Add(this.scoreText);
             this.Controls.Add(this.ground);
             this.Controls.Add(this.pipeTop);
             this.Controls.Add(this.pipeBottom);
@@ -89,6 +100,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label scoreText;
 
         private System.Windows.Forms.PictureBox flappyBird;
         private System.Windows.Forms.PictureBox pipeBottom;
