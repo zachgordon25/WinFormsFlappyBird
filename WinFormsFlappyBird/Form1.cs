@@ -14,7 +14,7 @@ namespace WinFormsFlappyBird
     public partial class Form1 : Form
     {
         int pipeSpeed = 8;
-        int gravity = 5;
+        int gravity = 15;
         private int score = 0;
 
         public Form1()
@@ -25,13 +25,25 @@ namespace WinFormsFlappyBird
         private void gameTimerEvent(object sender, EventArgs e)
         {
             flappyBird.Top += gravity;
+            pipeBottom.Left -= pipeSpeed;
+            pipeTop.Left -= pipeSpeed;
+
+            if (pipeBottom.Left < -50)
+            {
+                pipeBottom.Left = 800;
+            }
+
+            if (pipeTop.Left < -80)
+            {
+                pipeTop.Left = 950;
+            }
         }
 
         private void gamekeyisdown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = -5;
+                gravity = -15;
             }
         }
 
@@ -39,7 +51,7 @@ namespace WinFormsFlappyBird
         {
             if (e.KeyCode == Keys.Space)
             {
-                gravity = 5;
+                gravity = 15;
             }
         }
     }

@@ -55,7 +55,7 @@
             // pipeBottom
             //
             this.pipeBottom.Image = global::WinFormsFlappyBird.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(389, 462);
+            this.pipeBottom.Location = new System.Drawing.Point(349, 461);
             this.pipeBottom.Name = "pipeBottom";
             this.pipeBottom.Size = new System.Drawing.Size(116, 311);
             this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,7 +65,7 @@
             // pipeTop
             //
             this.pipeTop.Image = global::WinFormsFlappyBird.Properties.Resources.pipedown;
-            this.pipeTop.Location = new System.Drawing.Point(512, -20);
+            this.pipeTop.Location = new System.Drawing.Point(476, -20);
             this.pipeTop.Name = "pipeTop";
             this.pipeTop.Size = new System.Drawing.Size(116, 275);
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(669, 785);
+            this.ClientSize = new System.Drawing.Size(622, 707);
             this.Controls.Add(this.scoreText);
             this.Controls.Add(this.ground);
             this.Controls.Add(this.pipeTop);
