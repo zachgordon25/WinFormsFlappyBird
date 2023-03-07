@@ -28,12 +28,12 @@ namespace WinFormsFlappyBird
             pipeBottom.Left -= pipeSpeed;
             pipeTop.Left -= pipeSpeed;
 
-            if (pipeBottom.Left < -50)
+            if (pipeBottom.Left < -150)
             {
                 pipeBottom.Left = 800;
             }
 
-            if (pipeTop.Left < -80)
+            if (pipeTop.Left < -180)
             {
                 pipeTop.Left = 950;
             }
