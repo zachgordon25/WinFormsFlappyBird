@@ -84,11 +84,12 @@
             //
             // scoreText
             //
+            this.scoreText.AutoSize = true;
             this.scoreText.BackColor = System.Drawing.Color.Transparent;
-            this.scoreText.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreText.Location = new System.Drawing.Point(115, 640);
+            this.scoreText.Font = new System.Drawing.Font("Broadway", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreText.Location = new System.Drawing.Point(12, 640);
             this.scoreText.Name = "scoreText";
-            this.scoreText.Size = new System.Drawing.Size(232, 58);
+            this.scoreText.Size = new System.Drawing.Size(172, 42);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
             //
@@ -120,6 +121,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameTimer)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         private System.Timers.Timer gameTimer;
