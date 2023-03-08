@@ -27,15 +27,18 @@ namespace WinFormsFlappyBird
             flappyBird.Top += gravity;
             pipeBottom.Left -= pipeSpeed;
             pipeTop.Left -= pipeSpeed;
+            scoreText.Text = score.ToString();
 
             if (pipeBottom.Left < -150)
             {
                 pipeBottom.Left = 800;
+                score++;
             }
 
             if (pipeTop.Left < -180)
             {
                 pipeTop.Left = 950;
+                score++;
             }
         }
 
@@ -53,6 +56,10 @@ namespace WinFormsFlappyBird
             {
                 gravity = 5;
             }
+        }
+
+        private void endGame()
+        {
         }
     }
 }
