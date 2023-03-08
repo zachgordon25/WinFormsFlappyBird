@@ -55,7 +55,7 @@
             // pipeBottom
             //
             this.pipeBottom.Image = global::WinFormsFlappyBird.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(349, 461);
+            this.pipeBottom.Location = new System.Drawing.Point(353, 412);
             this.pipeBottom.Name = "pipeBottom";
             this.pipeBottom.Size = new System.Drawing.Size(116, 311);
             this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,7 +65,7 @@
             // pipeTop
             //
             this.pipeTop.Image = global::WinFormsFlappyBird.Properties.Resources.pipedown;
-            this.pipeTop.Location = new System.Drawing.Point(476, -20);
+            this.pipeTop.Location = new System.Drawing.Point(472, -36);
             this.pipeTop.Name = "pipeTop";
             this.pipeTop.Size = new System.Drawing.Size(116, 275);
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             // ground
             //
             this.ground.Image = global::WinFormsFlappyBird.Properties.Resources.ground;
-            this.ground.Location = new System.Drawing.Point(-16, 693);
+            this.ground.Location = new System.Drawing.Point(-18, 609);
             this.ground.Name = "ground";
             this.ground.Size = new System.Drawing.Size(715, 114);
             this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,10 +84,11 @@
             //
             // scoreText
             //
+            this.scoreText.BackColor = System.Drawing.Color.Transparent;
             this.scoreText.Font = new System.Drawing.Font("Broadway", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreText.Location = new System.Drawing.Point(12, 12);
+            this.scoreText.Location = new System.Drawing.Point(115, 640);
             this.scoreText.Name = "scoreText";
-            this.scoreText.Size = new System.Drawing.Size(232, 84);
+            this.scoreText.Size = new System.Drawing.Size(232, 58);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
             //

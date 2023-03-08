@@ -27,7 +27,7 @@ namespace WinFormsFlappyBird
             flappyBird.Top += gravity;
             pipeBottom.Left -= pipeSpeed;
             pipeTop.Left -= pipeSpeed;
-            scoreText.Text = score.ToString();
+            scoreText.Text = "Score: " + score;
 
             if (pipeBottom.Left < -150)
             {
@@ -39,6 +39,13 @@ namespace WinFormsFlappyBird
             {
                 pipeTop.Left = 950;
                 score++;
+            }
+
+            if (flappyBird.Bounds.IntersectsWith(pipeBottom.Bounds) ||
+                flappyBird.Bounds.IntersectsWith(pipeTop.Bounds) ||
+                flappyBird.Bounds.IntersectsWith(ground.Bounds))
+            {
+                endGame();
             }
         }
 
@@ -60,6 +67,8 @@ namespace WinFormsFlappyBird
 
         private void endGame()
         {
+            gameTimer.Stop();
+            scoreText.Text += " Game over!!!";
         }
     }
 }
