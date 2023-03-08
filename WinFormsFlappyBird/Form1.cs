@@ -48,11 +48,6 @@ namespace WinFormsFlappyBird
             {
                 endGame();
             }
-
-            if (score > 5)
-            {
-                pipeSpeed = 15;
-            }
         }
 
         private void gamekeyisdown(object sender, KeyEventArgs e)
